@@ -13,12 +13,15 @@ body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
   
-  background: url("background.jpg") center/cover no-repeat fixed;
+  background: var(--bg) url("background.jpg") center/cover no-repeat fixed;
   min-height: 100vh;
 }
 
 @media (max-width: 768px) {
-  body { background-attachment: scroll; }
+  body { 
+    background-attachment: scroll;
+    background-color: var(--bg);
+  }
 }
 .Container{max-width:720px;margin:0 auto;padding:32px 16px;}
 .hero{text-align:center;padding-top:32px}
@@ -48,6 +51,7 @@ h1{font-size:28px;margin:12px 0 6px 0;letter-spacing:0.2px}
   .Cards { padding: 16px 4px; gap: 12px; }
   .Cards .card { padding: 12px; }
   .Cards h2 { font-size: 18px; }
+  body { background-color: var(--bg); }
 }
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0));
